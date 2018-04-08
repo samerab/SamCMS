@@ -1,0 +1,66 @@
+
+<!-- [class.hidden]="hidden" -->
+
+
+
+<div class="row"  *ngIf="!hidden">
+  
+  <!-- Open Icon Div -->
+  <div class="col-1 offset-{{level}}" (click)="onclick()">
+    <button [ngClass]="{'open-icon': true, 'hidden': !hasChildren}">
+      <mat-icon>{{toggledIcon}}</mat-icon>
+    </button>  
+  </div>
+
+  <!-- Icon with Text Div -->
+  <div class="col-6 pointer">
+    <!-- Icon Div -->
+    <div class="row">
+      <div class="col-2">
+          <button class="icon">
+              <mat-icon>{{icon}}</mat-icon>
+          </button> 
+      </div>
+
+      <!-- Text Div -->
+      <div class="col-10">
+        {{data.name}}
+      </div>
+    </div>
+      
+    
+    
+  </div>
+  
+  
+
+</div> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="row align-items-center dotted-border-l">
+  <div class="col-2 ">
+    dd
+  </div>
+  <div class="col-2 sam-directors">
+      <div class="col-12 dotted-border-l dotted-border-b">s </div>
+      <div class="col-12 dotted-border-l" > s</div>
+      <div class="col-3 sam-arrow-icon" >f</div>
+  </div>
+  <div class="col-1">
+    <i class="fas fa-address-card"></i>
+  </div>
+  <div class="col-6">
+    samer abla
+  </div>
+</div> -->

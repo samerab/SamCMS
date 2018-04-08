@@ -1,0 +1,11 @@
+
+<div id="ddd" [@slideDown]="state" (@slideDown.done)="animationDone()">
+  <sam-tree-node *ngFor="let node of treeNodesData" [data]="node" [level]="node.level"></sam-tree-node>
+  <!-- <div [@slideDown3]="state">
+    <h1  *ngFor="let node of treeNodesData">{{node.name}}</h1>
+  </div> -->
+
+</div>
+
+
+    
